@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIFAT Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 XIFAT Downloader</h1>
+        <p>YouTube, Facebook, TikTok ভিডিও ডাউনলোড করুন</p>
+        
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="ভিডিও লিংক পেস্ট করুন...">
+            <button id="fetchBtn">Get Video</button>
+        </div>
+        
+        <div id="loading" class="hidden">ভিডিও খুঁজতেছি...</div>
+        
+        <div id="result" class="hidden">
+            <h3 id="videoTitle"></h3>
+            <img id="thumbnail" alt="Thumbnail">
+            
+            <div class="quality-section">
+                <p>Quality সিলেক্ট করুন:</p>
+                <div id="qualityButtons"></div>
+            </div>
+            
+            <a id="downloadBtn" href="#" target="_blank" download>
+                📥 Download Now
+            </a>
+        </div>
+        
+        <div id="error" class="hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
