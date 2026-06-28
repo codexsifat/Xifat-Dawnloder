@@ -34,7 +34,7 @@ fetchBtn.addEventListener('click', async () => {
     
     try {
         // Cobalt API Call - No Key Needed
-        const response = await fetch('https://api.cobalt.tools/api/json', {
+        const response = await fetch('https://co.wuk.sh/api/json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
